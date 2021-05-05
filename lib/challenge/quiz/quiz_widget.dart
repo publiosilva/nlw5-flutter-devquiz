@@ -1,6 +1,7 @@
-import 'package:DevQuiz/challenge/answer/answer_widget.dart';
-import 'package:DevQuiz/core/core.dart';
 import 'package:flutter/material.dart';
+
+import '../../core/core.dart';
+import '../answer/answer_widget.dart';
 
 class QuizWidget extends StatelessWidget {
   final String title;
@@ -12,9 +13,15 @@ class QuizWidget extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Text(
-            title,
-            style: AppTextStyles.heading,
+          SizedBox(height: 24),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+            ),
+            child: Text(
+              title,
+              style: AppTextStyles.heading,
+            ),
           ),
           SizedBox(height: 24),
           AnswerWidget(
