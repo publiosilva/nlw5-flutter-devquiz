@@ -5,7 +5,7 @@ import '../../../core/core.dart';
 
 class AnswerWidget extends StatelessWidget {
   final AnswerModel answer;
-  final VoidCallback onTap;
+  final ValueChanged<bool> onTap;
   final bool isSelected;
   final bool disabled;
 
@@ -43,7 +43,9 @@ class AnswerWidget extends StatelessWidget {
       child: IgnorePointer(
         ignoring: disabled,
         child: GestureDetector(
-          onTap: onTap,
+          onTap: () {
+            onTap(answer.isRight);
+          },
           child: Container(
             decoration: BoxDecoration(
               color: isSelected ? _selectedColorCardRight : AppColors.white,
