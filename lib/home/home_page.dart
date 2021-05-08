@@ -1,4 +1,4 @@
-import 'package:DevQuiz/challenge/challenge_page.dart';
+import 'package:dev_quiz/challenge/challenge_page.dart';
 import 'package:flutter/material.dart';
 
 import '../core/app_colors.dart';

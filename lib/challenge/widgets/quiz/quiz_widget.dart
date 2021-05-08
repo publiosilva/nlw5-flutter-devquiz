@@ -1,5 +1,5 @@
-import 'package:DevQuiz/shared/models/answer_model.dart';
-import 'package:DevQuiz/shared/models/question_model.dart';
+import 'package:dev_quiz/shared/models/answer_model.dart';
+import 'package:dev_quiz/shared/models/question_model.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/core.dart';
